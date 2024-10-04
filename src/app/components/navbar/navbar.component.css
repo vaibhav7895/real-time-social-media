@@ -1,0 +1,11 @@
+.notification-dot {
+    position: absolute;
+    top: 10px; /* Adjust this value to move the dot vertically */
+    right: 100px; /* Adjust this value to move the dot horizontally */
+    height: 10px; /* Adjust size as needed */
+    width: 10px; /* Adjust size as needed */
+    background-color: red; /* Red color for the dot */
+    border-radius: 50%; /* Make it circular */
+    border: 2px solid white; /* White border */
+  }
+  

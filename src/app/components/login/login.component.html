@@ -1,0 +1,43 @@
+<div class="flex justify-center items-center min-h-screen bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+  <div class="bg-white p-8 rounded-xl shadow-xl w-full max-w-lg">
+    <h2 class="text-3xl font-bold mb-6 text-gray-800 text-center">User Login</h2>
+    <form #form="ngForm" (ngSubmit)="onLogin(form)" class="space-y-6">
+      
+      <div>
+        <label for="email" class="block text-sm font-semibold text-gray-700">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          ngModel
+          required
+          class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-3"
+        />
+      </div>
+
+      <div>
+        <label for="password" class="block text-sm font-semibold text-gray-700">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          ngModel
+          required
+          class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-3"
+        />
+      </div>
+
+      <button
+        type="submit"
+        class="w-full py-3 px-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-bold rounded-lg shadow-lg hover:bg-gradient-to-r hover:from-indigo-700 hover:to-purple-700 focus:outline-none focus:ring-4 focus:ring-indigo-500 focus:ring-offset-2 transition-transform transform hover:scale-105"
+      >
+        Login
+      </button>
+    </form>
+    
+    <p class="mt-6 text-center text-gray-600">
+      Don't have an account? 
+      <a href="/signup" class="text-indigo-600 hover:underline">Sign Up</a>
+    </p>
+  </div>
+</div>
